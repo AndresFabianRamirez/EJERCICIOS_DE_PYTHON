@@ -10,4 +10,5 @@ def list_diccionario (csvFile):
             dicTemp = {key:value for (key,value) in parIterable}
             listV.append(dicTemp)
     return listV
- 
+if __name__ == "__main__":
+    print(list_diccionario("./WORLD.csv"))
