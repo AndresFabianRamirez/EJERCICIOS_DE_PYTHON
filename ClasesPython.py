@@ -101,8 +101,72 @@ print(items) """
 """  """
 """ equipoGanador = list(filter(ganador,matches)) """
 """ print(equipoGanador) """
-""" print(len(equipoGanador)) """
+""" print(len(equipoGanador)) """""" 
 import time
 local = time.localtime()
 result = time.asctime(local)
-print(result)
+print(result) """
+
+""" with open('./texto.txt','r+') as file: """
+"""     file.read() """
+"""     file.write('hola mundo \n') """
+"""     file.write('soy craack \n') """
+""" import csv """
+""" def read_csv(path): """
+"""     with open(path) as csvFile: """
+"""         reader = csv.reader(csvFile,delimiter=",") """
+"""         for i in reader: """
+"""             print("******") """
+"""             print(i) """
+""" if __name__ == "__main__": """
+"""     read_csv("./WORLD.csv") """
+
+
+""" list = [1,2,3] """
+""" b = iter(list) """
+""" next(b) """
+""" for i in b: """
+"""     print(i) """
+"""  """
+#En replit funciona
+""" import matplotlib.pyplot as plt """
+""" def graficaBarras(): """
+"""     labels = ["pescado","cerdo","pollo"] """
+"""     valores = [10,20,15] """
+"""     fig,ax = plt.subplots() """
+"""     ax.bar(labels,valores) """
+"""     plt.show() """
+""" if __name__ =="__main__": """
+"""     graficaBarras() """
+"""  """
+
+
+
+
+#EJERCICIO USANDO EL CSV
+
+""" import csv """
+"""  """
+""" def list_diccionario (csvFile): """
+"""     with open(csvFile) as csvFile: """
+"""         reader = csv.reader(csvFile, delimiter=(',')) """
+"""         header =next (reader) """
+"""         listV = [] """
+"""         for row in reader: """
+"""             parIterable = zip(header,row) """
+"""             dicTemp = {key:value for (key,value) in parIterable} """
+"""             listV.append(dicTemp) """
+"""     return listV """
+""" listV = list_diccionario("./WORLD.csv") """
+""" pais1 = listV[0] """
+""" años = ['2022 Population','2020 Population','2015 Population','2010 Population','2000 Population','1990 Population','1980 Population','1970 Population'] """
+""" poblacionValor = {año:poblacion for (año,poblacion) in pais1.items() if año in años} """
+""" print(poblacionValor.keys()) """
+"""  """
+"""  """
+"""  """
+"""  """
+
+a = ["1","2","56"]
+aN = list(map(lambda i:int(i),a))
+print(aN)
