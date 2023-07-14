@@ -2,7 +2,7 @@ import main
 import functions
 
 diccionarioListo = main.list_diccionario('./WORLD.csv')
-usuario='South America'
+usuario=input('Continente a filtrar \n *Africa \n *Europe \n *Asia \n *North America \n *South America \n *Oceania \n')
 diccionarioListo = list(filter(lambda x: x['Continent']==usuario,diccionarioListo))
 countries = list(map(lambda x: x['Country/Territory'],diccionarioListo))
 print(countries)
