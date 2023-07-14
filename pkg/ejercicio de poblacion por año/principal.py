@@ -14,9 +14,10 @@ def valores(x):
 poblacionValor = list(map(valores ,filtradoPais))
 
 
-labels = años
+labels = list(map(lambda x: x[0:4],años))
+print(labels)
 valores = poblacionValor[0]
 print(valores) 
 valoresN = list(map(lambda i: int(i),valores)) 
-graficadora.graficaBarras(labels,valoresN) 
+graficadora.graficaBarras(country,labels,valoresN) 
 
