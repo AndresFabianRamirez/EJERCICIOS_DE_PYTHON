@@ -16,7 +16,10 @@ datas = [
         "price" : 2000
     }
 ]
-productos = ["arroz","carne","arroz"]
+print('Productos Disponibles. \n arroz:1200 \n carne:16000 \n buñuelo:2000 \n')
+n = int(input("Cantidad de productos comprados: "))
+productos = list(map(lambda x: input("Elemento comprado: "),range(n)))
+
 
 
 

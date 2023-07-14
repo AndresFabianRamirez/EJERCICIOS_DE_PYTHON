@@ -10,7 +10,6 @@ def compras():
 
     soloPrecios = list(map(lambda item:item["price"], b))
     result = functools.reduce(lambda counter,precio: counter+precio,soloPrecios )
-    print(result, soloPrecios)
     return soloPrecios,result
 
 
