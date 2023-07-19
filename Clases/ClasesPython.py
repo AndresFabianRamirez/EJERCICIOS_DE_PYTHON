@@ -166,7 +166,165 @@ print(result) """
 """  """
 """  """
 """  """
-
+""" 
 a = ["1","2","56"]
 aN = list(map(lambda i:int(i),a))
-print(aN)
+print(aN) """
+""" try: """
+
+""" assert  """
+""" except AssertionError as error:
+    print(error) """
+""" a = ("a","b","c")
+iterador = iter(a)
+print(next(iterador))
+print(type(a))
+for i in iterador:
+    print(i)  """
+""" 
+estudiantes = {
+    "tipo de colegio":"privado",
+    "pais": "Colombia",
+    "grado": "septimo"
+}
+print(estudiantes.items())
+for llave,valor in estudiantes.items():
+    print(llave) """
+
+""" objetivo = int (input())
+epsilon = 0.01
+bajo = 0.0
+alto = max(1.0,objetivo)
+respuesta = (alto+bajo)/2
+
+while abs(respuesta**2 - objetivo)>=epsilon:
+    if respuesta**2 < objetivo:
+        bajo = respuesta
+    else:
+        alto = respuesta
+    print(f'bajo: {bajo} alto: {alto}')
+    respuesta = (alto+bajo)/2
+print(f'la raiz cuadrada de {objetivo} es: {respuesta}')
+ """
+
+""" for i in range(0,50):
+    print(2*i +1) """
+""" lista1 =[]
+def nones(n):
+    if n==1:
+        lista1.append(1)
+        print (1)
+        
+        return 1
+    if n%2 == 0:
+        return nones(n-1)
+    print(n)
+    lista1.append(n)
+    return nones(n-1)
+nones(13) 
+
+lista2 = [1,2,456,7]
+lista2.sort()
+print(lista2)
+lista1.sort()
+print(lista1)
+ """
+""" A = "hola"
+print(A.startswith("h"))""" 
+""" import unittest
+
+def mayordeedad(edad):
+    if edad>=18:
+        return False
+    else:
+        return False
+class PruebaCristal(unittest.TestCase):
+    def test_mayor_edad(self):
+        edad = 20
+        resultado = mayordeedad(edad)
+        self.assertEqual(resultado,True)
+    def test_menor_edad(self):
+        edad = 15
+        resultado = mayordeedad(edad)
+        self.assertEqual(resultado,False)
+
+if __name__ == "__main__":
+    unittest.main()
+ """
+""" import unittest
+def dna_to_rna(dna):
+    return dna.replace("T","U")
+
+class pruebaARN( unittest.TestCase):
+    def test_digitosraros(self):
+        resultado = dna_to_rna("...GCTCTCTGA..*")
+        self.assertEqual(resultado,"...GCUCUCUGA..*")
+        
+if __name__ == "__main__":
+    unittest.main() """
+
+""" def function(a):
+    return a+1,a
+print(type(function(5)))
+
+ """
+ #Números primos
+""" """ 
+
+""" def primos(n,lista1):
+    if n ==1:
+        lista1.append(1)
+        return lista1
+    for i in range(2,(n//2)+2):
+        if n%i == 0:
+            return primos(n-1)
+    lista1.append(n)
+    return primos(n-1)
+
+print(primos(17,[])) 
+ """
+ #caracol
+""" def caracol(n):
+    str1 = ""
+    for i in range(1,n+1):
+        str1 += i
+ """
+""" a =[1,2,3]
+a.insert(1,4)
+a.append(5)
+print(a) 
+print(list(range(1,5))) 
+for i in ([1,2,3]):
+    print(i) """
+""" lista =[[],[],[],[],[]]
+j=1
+for i in range (6,9):
+    lista[j].insert(-1,i)
+    j+=1
+print(lista) """
+""" iterador = iter([1,2,5,6])
+for i in range(1,3):
+    print(next(iterador))
+print(list(iterador)) """
+
+""" lista1 =[]
+for i in range(5):
+    lista1.append([])
+lista1[1]
+print(lista1)
+ """
+iterador=iter(range(5))
+""" print(list(iterador)) """
+""" for i in range(6):
+    print(next(iterador))
+ """
+""" lista =[1,6,4,8]
+lista.insert(len(lista)//2,10)
+lista.insert(len(lista)//2,15)
+print(lista) """
+
+
+n = 15
+np = int(n)
+n=16
+
